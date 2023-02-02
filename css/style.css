@@ -1,0 +1,194 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    position: relative;/* для сдвига фона у promo под шапку с логотипом */
+}
+nav {
+    height: 50px;
+    background-color: #212121;
+    width: 100%;
+    position: fixed;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;/* для устранения зазора между менюшкой и главным белым блоком (ширину паддинга сверху и снизу берем 13px */
+    margin: 0;
+    list-style-type: none;
+}
+.menu .menu_link {
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+.menu .menu_item {
+    border-right: 2px dotted black; /*точечные разделители для меню*/
+    padding-right: 28px;
+}
+.subheader {
+    position: absolute; /* нужно для перемещения фона под шапку */
+    margin-top: 50px;
+    width: 100%;
+    height: 84px;
+    background: rgba(0,0,0, .6); /* прозрачность через альфа канал */
+    /* opacity: 0.6; - это применение прозрачности ко всему блоку, но так как у нас еще есть кнопки и надписи, которые сделаются прозрачными вместе с блоком, нужно использовать цвет фона (rgba) (альфа канал)*/
+}
+.subheader .subheader_logo {
+max-width: 100%; /* 100% от моей колонки, (без разницы какая картинка, она будет ограничена за счет колонки в этом размере) */
+display: block; /* ссылка изначально строчный элемент, поэтому нужно устанавливать display */
+margin-top: 16px;
+}
+.subheader .subheader_official {
+    margin-top: 6px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 13px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.subheader .subheader_call {
+    margin-top: 19px;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: right;
+    color: #FFFFFF;
+}
+.subheader .subheader_phone {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 12px;
+    display: block;
+    margin-top: 8px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.subheader .subheader_btn {
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(to top, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    border-radius: 4px;
+}
+.promo {
+    min-height: 800px;
+    background: url('../img/uber_bg.png')center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+}
+.promo .promo_header {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 151px;
+}
+.promo .promo_subheader {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 22px;
+}
+.promo .promo_descr {
+    margin-top: 23px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.promo .promo_btn {
+    display: block;
+    margin: 118px auto 0 auto;
+    width: 259px;
+    height: 63px;
+    background: linear-gradient(to top, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    border-radius: 4px;
+}
+.eight {
+    min-height: 850px;
+}
+.label {
+    display: flex;
+    justify-content: center;
+    margin-left: 500px;
+    margin-top: 21px;
+    width: 115px;
+    height: 27px;
+    background: #000000;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: center;
+    align-items:center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.eight .col-2 {
+    padding: 0;
+padding-left: 35px;
+}
+.eight .eight_header {
+    margin: 0;
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+}
+.eight .eight_img {
+    margin-top: 20px;
+    height: 116px;
+    width: 116px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #1EACC7;
+    border-radius:100%;
+}
+.eight .col-4 {
+    margin: 0;
+    margin-top: 16px;
+}
+.eight .col-4 h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    align-items: center;
+    color: #1EACC7;
+}
+.eight .col-4 p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    align-items: center;
+    color: #202020;
+}
